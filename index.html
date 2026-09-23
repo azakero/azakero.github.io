@@ -42,19 +42,20 @@
 
   <div class="test-box">
     <p>This page is for testing our live chat integration.</p>
-    <button id="testBtn">Test Button</button>
-    <p id="status">Chat script status: waiting...</p>
   </div>
 
-  <script>
-    // Simple confirmation that JS is running
-    document.getElementById('status').textContent = 'Chat script status: JS is running ✔';
-
-    // Example button handler
-    document.getElementById('testBtn').addEventListener('click', function () {
-      alert('Button works! Replace this with your chat trigger.');
-    });
+  <script type="text/javascript">
+    var _cb = _cb || [];
+    _cb.push(['setSourceHash', '65250a66a59f48.29698889']);
+    _cb.push(['setPrivacyLevel', 'allowTracking']);
+    _cb.push(['setEndpoint', 'https://staging.conversion24.com/sdk/']);
+    _cb.push(['setDataEndpoint', 'https://staging.conversion24.com/']);
+    _cb.push(['setDefaultCss', true]);
+    _cb.push(['addPageview']);
+    _cb.push(['setAutoLoad', true]);
+    _cb.push(['pollAvailability', 7500]);
+    !function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.id="cb_script",e.crossorigin="anonymous",e.src='https://staging.conversion24.com/sdk/loader.js';var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}();
   </script>
-
+    
 </body>
 </html>
